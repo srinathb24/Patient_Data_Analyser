@@ -40,7 +40,7 @@ def login():
 
 @app.route("/user",methods=["POST","GET"])
 def user():
-	return redirect(url_for("login"))
+	return render_template("user.html")
 
 @app.route("/logout")
 def logout():

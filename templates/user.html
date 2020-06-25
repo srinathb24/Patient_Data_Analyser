@@ -1,0 +1,126 @@
+{% extends "header.html" %}
+{% block title %}
+{% endblock %}
+
+{% block content %}
+<br>
+<div class="row row-content align-items-center">
+	<div class="col-12 col-sm-3 offset-2">
+		<button class="btn btn-dark" data-toggle="collapse" data-target="#patientdata">
+			Upload data
+		</button>
+	</div>
+	<div class="col-12 col-sm-3 offset-4">
+		<button class="btn btn-dark" data-toggle="collapse" data-target="#querydata">
+			Query Data
+		</button>
+	</div>
+</div>
+<br>
+<div class="collapse" id="patientdata">
+<div class="row row-content align-items-center" >
+            
+            <div class="col-12 col-sm-8 offset-2">
+            	
+                <div class="card" >
+                    <center><h3 class="card-header bg-light text-dark">Patient Data</h3></center>
+                    <form >
+                    	<br>
+                        <div class="form-group row">
+                            <label for="Aadhar" class="col-md-2 col-form-label ml-3">Aadhar</label>
+                            <div class="col-sm-6 offset-2">
+                            <input type="number" class="form-control" id="Aadhar" name="Aadhar" placeholder="Aadhar">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="admissiondate" class="col-md-2 col-form-label ml-3">Admission Time</label>
+                            <div class="col-sm-6 offset-2">
+                            <input type="time" class="form-control" id="admissiontime" name="time" placeholder="Admission Time">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="dischargedate" class="col-md-2 col-form-label ml-3">Discharge Time</label>
+                            <div class="col-sm-6 offset-2">
+                            <input type="time" class="form-control" id="dischargetime" name="time" placeholder="Discharge Time">
+                            </div>
+                        </div>       
+                        <div class="form-group row">
+                            <label for="hospitalid" class="col-md-2 col-form-label ml-3">Hospital Id</label>
+                            <div class="col-sm-6 offset-2">
+                            <input type="number" class="form-control" id="hospitalid" name="number" placeholder="hospitalid">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="doctorid" class="col-md-2 col-form-label ml-3">Doctor Id</label>
+                            <div class="col-sm-6 offset-2">
+                            <input type="number" class="form-control" id="doctorid" name="number" placeholder="doctorid">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="diseaseid" class="col-md-2 col-form-label ml-3">Disease Id</label>
+                            <div class="col-sm-6 offset-2">
+                            <input type="number" class="form-control" id="diseaseid" name="number" placeholder="diseaseid">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                         	<label for="remarks" class="col-md-2 col-form-label ml-3 "> Remarks </label>
+                       		<div class="col-sm-6 offset-2">
+                            <textarea class="form-control" id="remarks" name="remarks" rows="6"> </textarea>
+                       		</div>
+                   		</div>
+                   		<div class="form-group row">
+                            <label for="status" class="col-md-2 col-form-label ml-3">status</label>
+                            <div class="col-sm-6 offset-2">
+                            <input type="text" class="form-control" id="status" name="status" placeholder="status">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                     		<div class="col-md-10 offset-5">
+                         		<button type="submit" class="btn btn-primary">
+                             		Upload
+                         		</button>
+                     		</div>
+                   		</div>
+                   	</form>
+                   </div>
+                   </div>
+               </div>
+           </div>
+ <div class="collapse" id="querydata">
+ 	<div class="row row-content align-items-center">
+ 		<div class="col-12 col-sm-6 offset-3">
+            	
+                <div class="card" >
+                    <center><h3 class="card-header bg-light text-dark">Query Patient Data</h3></center>
+                    <form >
+                    	<br>
+                    	<div class="form-group row">
+                    	</div>
+                        <div class="form-group row">
+                            <label for="Aadhar" class="col-md-2 col-form-label offset-1">Aadhar</label>
+                            <div class="col-sm-5 offset-1">
+                            <input type="number" class="form-control" id="Aadhar" name="Aadhar" placeholder="Aadhar">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                        </div>
+                        <div class="form-group row">
+                     		<div class="col-md-5 offset-4">
+                         		<button type="submit" class="btn btn-primary">
+                             		Submit
+                         		</button>
+                     		</div>
+                   		</div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+ 		
+ 	</div>
+ 	
+ </div>          
+
+{% endblock %}
+
